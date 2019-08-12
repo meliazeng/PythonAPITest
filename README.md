@@ -1,7 +1,7 @@
-# PythonAPITest
+## PythonAPITest
 Simple project using python to provide Api endpoint for http post and save data to mangodb afterward.
 
-# Getting Started
+## Getting Started
 The script has been tested in Ubuntu 18.04.1. To test the script, simply put the file helloApi.py under a folder and access it with console.
 
 ## Prerequisites
@@ -28,9 +28,9 @@ if need to run postman on another computer. below line in helloApi.py file need 
 ```
 app.run(debug=True, port='5002',host='localhost')
 ```
-postman should return respond > hello Stranger!
-Use postman to send another http post to http://localhost:5002/hello, this time with *name=James* on the body 
-postman should return respond > hello James
+postman should return respond **hello Stranger!**
+Use postman to send another http post to http://localhost:5002/hello, this time with **name=James** on the body 
+postman should return respond **hello James**
 
 ## verify the data in mongo db
 a record of {'Visit_name': 'James'} should be able to find with command in mongo shell
