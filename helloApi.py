@@ -4,7 +4,7 @@ from pymongo import Connection
 from json import dumps
 #from flask.ext.jsonpify import jsonify
 
-connection = Connection('192.168.9.80', 31581)
+connection = Connection('localhost', 27017)
 db = connection.hellodb
 app = Flask(__name__)
 api = Api(app)
@@ -27,6 +27,6 @@ class Visit(Resource):
 api.add_resource(Visit, '/hello')
 
 if __name__ == '__main__':
-    app.run(debug=True, port='5002',host='192.168.9.60')
+    app.run(debug=True, port='5002',host='localhost')
         
 
